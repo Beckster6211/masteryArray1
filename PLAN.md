@@ -38,7 +38,7 @@ function makeFruitArray() {
 
 ### Task 4
 
-The 'checkArrayLength' function takes in an array as its first argument. Inside the function, return the number that represents the length of this array.
+The 'checkArrayLength' function takes in an array as its only argument. Inside the function, return the number that represents the length of this array.
 
 function checkArrayLength(array) {
 
@@ -46,7 +46,7 @@ function checkArrayLength(array) {
 
 ### Task 5
 
-The 'makeArrayWithLength' function takes in a number as its first argument. Inside the function, return an array that is as long as the number.
+The 'makeArrayWithLength' function takes in a number as its only argument. Inside the function, return an array that is as long as the number.
 
 function makeArrayWithLength(number) {
 
@@ -54,7 +54,7 @@ function makeArrayWithLength(number) {
 
 ### Task 6
 
-The 'accessFirstItem' function takes in an array as its first argument. Inside the function, return the first item in this array.
+The 'accessFirstItem' function takes in an array as its only argument. Inside the function, return the first item in this array.
 
 function accessFirstItem(array) {
 
@@ -62,7 +62,7 @@ function accessFirstItem(array) {
 
 ### Task 7
 
-The 'accessLastItem' function takes in an array as its first argument. Inside the function, return the last item in this array.
+The 'accessLastItem' function takes in an array as its only argument. Inside the function, return the last item in this array.
 
 function accessLastItem(array) {
     
@@ -80,11 +80,74 @@ function changeArrayItem(array, index, newArrayItem) {
 
 Most array complexity checklist:
 
-- Push or unshift an item on to the end or start of an array
 - Pop and shift an item on to the end or start of an array
+- Push or unshift an item on to the end or start of an array
 - Turn an array into a string
 - Merge two arrays together
 - Splice out part of an array
 - Slice out part of an array
 
+### Task 9
+
+The 'addToArrayEnd' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the end of the array using an array method.
+
+function addToArrayEnd(array, newArrayItem) {
+
+}
+
+### Task 10
+
+The 'addToArrayStart' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the start of the array using an array method.
+
+function addToArrayStart(array, newArrayItem) {
+
+}
+
+### Task 11
+
+The 'removeFromArrayEnd' function takes in an array as its only argument. Inside the function, remove the item from the end of the array using an array method.
+
+function removeFromArrayEnd(array) {
+
+}
+
+### Task 12
+
+The 'removeFromArrayStart' function takes in an array as its only argument. Inside the function, remove the item from the start of the array using an array method.
+
+function removeFromArrayStart(array) {
+    
+}
+
+### Task 13
+
+The 'makeArrayString' function takes in an array of string data as its only argument. Inside the function, return the contents of the array as a human readable string using an array method. For example, ['hoover', 'mop', 'dustpan'] would become 'hoover, mop, dustpan'. 
+
+function makeArrayString(array) {
+
+}
+
+### Task 14
+
+The 'mutateIndexFive' function takes in an array that contains five or more items. Inside the function, change the fifth item in the array to the string 'mutate' using an array method. For example, ['cumin', 'corriander', 'paprika', 'garam masala', 'tumeric', 'bay leaves'] would become ['cumin', 'corriander', 'paprika', 'garam masala', 'mutate', 'bay leaves']
+
+function mutateIndexFive() {
+
+}
+
+### Task 15
+
+The 'makeShorterArray' function takes in an array and a number as its arguments. Inside the function, return a copy of the array with the specified number of items removed from the beginning using an array method. For example, if the given array was [10, 5, 18, 80, 54], and the given number was 3, the function would return [80, 54].
+
+function makeShorterArray(array, number) {
+
+}
+
+
 ## Level 3 - Real Problem
+
+You have been tasked with running the community Christmas raffle. Last year there was outrage when the same ticket was pulled multiple times, causing local residents to come to blows after one individual claimed multiple prizes with a single ticket. Organisers are adamant that this should not happen again. The 'removeTicket' function takes in an array of ticket numbers, and the number ticket that has been drawn. Inside the function, remove that number ticket from the array of ticket numbers so that it cannot be drawn again.
+
+function removeTicket(ticketArray, numberDrawn) {
+
+}
