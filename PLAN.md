@@ -146,7 +146,7 @@ function makeShorterArray(array, number) {
 
 ## Level 3 - Real Problem
 
-You have been tasked with running the community Christmas raffle. Last year there was outrage when the same ticket was pulled multiple times, causing local residents to come to blows after one individual claimed multiple prizes with a single ticket. Organisers are adamant that this should not happen again. The 'removeTicket' function takes in an array of ticket numbers, and the number ticket that has been drawn. Inside the function, remove that number ticket from the array of ticket numbers so that it cannot be drawn again.
+You have been tasked with running the community Christmas raffle. Last year there was outrage when the same ticket was pulled multiple times, causing local residents to come to blows after one individual claimed multiple prizes with a single ticket. Organisers are adamant that this should not happen again. The 'removeTicket' function takes in an array of ticket numbers, and the number ticket that has been drawn. Inside the function, remove that number ticket from the array of ticket numbers so that it cannot be drawn again..
 
 function removeTicket(ticketArray, numberDrawn) {
 
