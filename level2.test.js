@@ -14,7 +14,7 @@ const {
 describe('addToArrayEnd function', () => {
   it('uses the push method', () => {
     const expected = 'push';
-    const actual = getTaskString(addToArrayEnd);
+    const actual = getTaskString(addToArrayEnd, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -31,7 +31,7 @@ describe('addToArrayEnd function', () => {
 describe('addToArrayStart function', () => {
   it('uses the shift method', () => {
     const expected = 'unshift';
-    const actual = getTaskString(addToArrayStart);
+    const actual = getTaskString(addToArrayStart, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -48,7 +48,7 @@ describe('addToArrayStart function', () => {
 describe('addToArrayStart function', () => {
   it('uses the shift method', () => {
     const expected = 'unshift';
-    const actual = getTaskString(addToArrayStart);
+    const actual = getTaskString(addToArrayStart, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -65,7 +65,7 @@ describe('addToArrayStart function', () => {
 describe('addToArrayStart function', () => {
   it('uses the unshift method', () => {
     const expected = 'unshift';
-    const actual = getTaskString(addToArrayStart);
+    const actual = getTaskString(addToArrayStart, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -82,7 +82,7 @@ describe('addToArrayStart function', () => {
 describe('removeFromArrayEnd function', () => {
   it('uses the pop method', () => {
     const expected = 'pop';
-    const actual = getTaskString(removeFromArrayEnd);
+    const actual = getTaskString(removeFromArrayEnd, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -98,7 +98,7 @@ describe('removeFromArrayEnd function', () => {
 describe('removeFromArrayStart function', () => {
   it('uses the shift method', () => {
     const expected = 'shift';
-    const actual = getTaskString(removeFromArrayStart);
+    const actual = getTaskString(removeFromArrayStart, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -121,7 +121,7 @@ describe('makeArrayString function', () => {
   });
   it('uses the join method', () => {
     const expected = 'join';
-    const actual = getTaskString(makeArrayString);
+    const actual = getTaskString(makeArrayString, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -136,7 +136,7 @@ describe('makeArrayString function', () => {
 describe('mutateIndexFive function', () => {
   it('uses the splice method', () => {
     const expected = 'splice';
-    const actual = getTaskString(mutateIndexFive);
+    const actual = getTaskString(mutateIndexFive, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });
@@ -151,7 +151,7 @@ describe('mutateIndexFive function', () => {
 describe('makeShorterArray function', () => {
   it('uses the slice method', () => {
     const expected = 'slice';
-    const actual = getTaskString(makeShorterArray);
+    const actual = getTaskString(makeShorterArray, 3);
 
     expect(actual).toEqual(expect.stringContaining(expected));
   });

@@ -30,7 +30,7 @@ function makeNumbersArray() {
 
 ### Task 3
 
-Inside the 'makeFruitArray' function, declare and return an array containing the following strings: 'Mango', 'Kiwi', 'Papaya', 'Plum'. Declare the array using the array constructor method. 
+Inside the 'makeFruitArray' function, declare and return an array containing the following strings: 'Mango', 'Kiwi', 'Papaya', 'Plum'. Declare the array using the array constructor method.
 
 function makeFruitArray() {
 
@@ -65,7 +65,7 @@ function accessFirstItem(array) {
 The 'accessLastItem' function takes in an array as its only argument. Inside the function, return the last item in this array.
 
 function accessLastItem(array) {
-    
+  
 }
 
 ### Task 8
@@ -88,7 +88,7 @@ function changeArrayItem(array, index, newArrayItem) {
 
 Most array complexity checklist:
 
-- Pop and shift an item on to the end or start of an array
+- Pop or shift an item on to the end or start of an array
 - Push or unshift an item on to the end or start of an array
 - Turn an array into a string
 - Merge two arrays together
@@ -124,12 +124,12 @@ function removeFromArrayEnd(array) {
 The 'removeFromArrayStart' function takes in an array as its only argument. Inside the function, remove the item from the start of the array using an array method. The array method should mutate the original array.
 
 function removeFromArrayStart(array) {
-    
+  
 }
 
 ### Task 14
 
-The 'makeArrayString' function takes in an array of string data as its only argument. Inside the function, return the contents of the array as a human readable string list, separated by commas, using an array method. For example, ['hoover', 'mop', 'dustpan'] would become 'hoover, mop, dustpan'. 
+The 'makeArrayString' function takes in an array of string data as its only argument. Inside the function, return the contents of the array as a human readable string list, separated by commas, using an array method. For example, ['hoover', 'mop', 'dustpan'] would become 'hoover, mop, dustpan'.
 
 function makeArrayString(array) {
 
@@ -150,7 +150,6 @@ The 'makeShorterArray' function takes in an array and a number as its arguments.
 function makeShorterArray(array, number) {
 
 }
-
 
 ## Level 3 - Real Problem
 
