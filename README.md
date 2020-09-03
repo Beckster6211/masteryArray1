@@ -6,16 +6,6 @@
 
 ## Level 1 - Basic Syntax
 
-Basic array syntax checklist:
-
-- Declare an array
-- Declare an array with contents
-- Declare an array using the 'new Array' syntax
-- Check the length of an array
-- Make an array witha specified length
-- Access a specific item in the array (first and last)
-- Changing elements in an array
-
 ### Task 1
 
 Inside the 'makeEmptyArray' function, declare and return an empty array.
@@ -89,15 +79,6 @@ function changeArrayItem(array, index, newArrayItem) {
 }
 
 ## Level 2 - More Complexity
-
-Most array complexity checklist:
-
-- Pop or shift an item on to the end or start of an array
-- Push or unshift an item on to the end or start of an array
-- Turn an array into a string
-- Merge two arrays together
-- Splice out part of an array
-- Slice out part of an array
 
 ### Task 10
 
