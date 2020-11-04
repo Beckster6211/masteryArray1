@@ -2,65 +2,51 @@
 
 Inside the 'makeEmptyArray' function, declare and return an empty array. */
 
-function makeEmptyArray() {
-  return [];
-}
+function makeEmptyArray() {}
 
 /* Task 2
   
   Inside the 'makeNumbersArray' function, declare and return an array with the numbers 0 to 5 listed as items within the array. */
 
-function makeNumbersArray() {
-  return [0, 1, 2, 3, 4, 5];
-}
+function makeNumbersArray() {}
 
 /* Task 3
   
   Inside the 'makeFruitArray' function, declare and return an array containing the following strings: 'Mango', 'Kiwi', 'Papaya', 'Plum'. 
   Declare the array using the array constructor method.  */
 
-function makeFruitArray() {
-  return Array('Mango', 'Kiwi', 'Papaya', 'Plum');
-}
+function makeFruitArray() {}
 
 /* Task 4
   
   The 'checkArrayLength' function takes in an array as its only argument. Inside the function, return the number that represents the
   length of this array. */
 
-function checkArrayLength(array) {
-  return array.length;
-}
+function checkArrayLength(array) {}
 
 /* Task 5
   
-  The 'makeArrayWithLength' function takes in a number as its only argument. Inside the function, return an array that is as long as the 
-  number, but where each item in the array is undefined. */
+The 'makeArrayWithLength' function takes in a number as its only argument. Inside the function, return an array that is as long as the 
+number, but where each item in the array is undefined. */
 
-function makeArrayWithLength(number) {
-  return Array(number);
-}
+function makeArrayWithLength(number) {}
 
 /* Task 6
   
-  The 'accessFirstItem' function takes in an array as its only argument. Inside the function, return the first item in this array. */
+The 'accessFirstItem' function takes in an array as its only argument. Inside the function, return the first item in this array. */
 
-function accessFirstItem(array) {
-  return array[0];
-}
+function accessFirstItem(array) {}
 
 /* Task 7
   
   The 'accessLastItem' function takes in an array as its only argument. Inside the function, return the last item in this array. */
 
-function accessLastItem(array) {
-  return array[[array.length - 1]];
-}
+function accessLastItem(array) {}
 
 /* Task 8
   
-  The 'accessSpecificItem' function takes in an array and an index number as its arguments. Return the item in the array from the index 
-  specified index. */
+The 'accessSpecificItem' function takes in an array and an index (number) as its arguments. Return the item in the array at the specified
+index. */
 
 function accessSpecificItem(array, index) {
   return array[index];
@@ -68,54 +54,38 @@ function accessSpecificItem(array, index) {
 
 /* Task 9
   
-  The 'changeArrayItem' function takes in an array, an index and a newArrayItem. Inside the function, change the array so that the item 
-  at the specified index is replaced with the new item, and return the updated array. */
+The 'changeArrayItem' function takes in an array, an index and a newArrayItem. Inside the function, mutate the array so that the item 
+at the specified index is replaced with the new item, and return the updated array. */
 
-function changeArrayItem(array, index, newArrayItem) {
-  const updatedArray = array;
-  updatedArray[index] = newArrayItem;
-  return updatedArray;
-}
+function changeArrayItem(array, index, newArrayItem) {}
 
 /* Task 10
 
 The 'addToArrayEnd' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the end of
 the array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function addToArrayEnd(array, newArrayItem) {
-  array.push(newArrayItem);
-  return array;
-}
+function addToArrayEnd(array, newArrayItem) {}
 
 /* Task 11
   
   The 'addToArrayStart' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the 
   start of the array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function addToArrayStart(array, newArrayItem) {
-  array.unshift(newArrayItem);
-  return array;
-}
+function addToArrayStart(array, newArrayItem) {}
 
 /* Task 12
   
   The 'removeFromArrayEnd' function takes in an array as its only argument. Inside the function, remove the item from the end of the 
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function removeFromArrayEnd(array) {
-  array.pop();
-  return array;
-}
+function removeFromArrayEnd(array) {}
 
 /* Task 13
   
   The 'removeFromArrayStart' function takes in an array as its only argument. Inside the function, remove the item from the start of the 
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function removeFromArrayStart(array) {
-  array.shift();
-  return array;
-}
+function removeFromArrayStart(array) {}
 
 /* Task 14
   
@@ -123,9 +93,7 @@ function removeFromArrayStart(array) {
   array as a human readable string list, separated by commas, using an array method. For example, ['hoover', 'mop', 'dustpan'] would 
   become 'hoover, mop, dustpan'.  */
 
-function makeArrayString(array) {
-  return array.join(', ');
-}
+function makeArrayString(array) {}
 
 /* Task 15
   
@@ -133,10 +101,7 @@ function makeArrayString(array) {
   array to the string 'mutate' using an array method. For example, ['cumin', 'corriander', 'paprika', 'garam masala', 'tumeric', 'bay 
   leaves'] would become ['cumin', 'corriander', 'paprika', 'garam masala', 'mutate', 'bay leaves']. Return the mutated array. */
 
-function mutateIndexFive(array) {
-  array.splice(4, 1, 'mutate');
-  return array;
-}
+function mutateIndexFive(array) {}
 
 /* Task 16
   
@@ -145,23 +110,17 @@ function mutateIndexFive(array) {
   items in the array. For example, if the given array was [10, 5, 18, 80, 54], and the given number was 3, the function would 
   return [80, 54]. */
 
-function makeShorterArray(array, number) {
-  return array.slice(number);
-}
+function makeShorterArray(array, number) {}
 
 /* Task 17
 
 You have been tasked with running the community Christmas raffle. Last year there was outrage when the same ticket was pulled multiple 
 times, causing local residents to come to blows after one individual claimed multiple prizes with a single ticket. Organisers are 
-adamant that this should not happen again. The 'removeTicket' function takes in an array of ticket numbers, and the number ticket that 
-has been drawn. Inside the function, remove that number ticket from the array of ticket numbers so that it cannot be drawn again. Return
+adamant that this should not happen again. The 'removeTicket' function takes in an array of ticket numbers, and the number of the ticket that 
+has been drawn. Inside the function, remove that ticket number from the array of ticket numbers so that it cannot be drawn again. Return
 the updated array of tickets. You may mutate the array. */
 
-function removeTicket(ticketArray, numberDrawn) {
-  const ticketIndex = ticketArray.findIndex((ticket) => ticket === numberDrawn);
-  ticketArray.splice(ticketIndex, 1);
-  return ticketArray;
-}
+function removeTicket(ticketArray, numberDrawn) {}
 
 module.exports = {
   makeEmptyArray,
