@@ -2,27 +2,38 @@
 
 Inside the 'makeEmptyArray' function, declare and return an empty array. */
 
-function makeEmptyArray() {}
+function makeEmptyArray() {
+  let array = [];
+  return array;
+}
 
 /* Task 2
   
   Inside the 'makeNumbersArray' function, declare and return an array with the numbers 0 to 5 listed as items within the array. */
 
-function makeNumbersArray() {}
+function makeNumbersArray() {
+  let array = [0, 1, 2, 3, 4, 5];
+  return array;
+}
 
 /* Task 3
   
   Inside the 'makeFruitArray' function, declare and return an array containing the following strings: 'Mango', 'Kiwi', 'Papaya', 'Plum'. 
   Declare the array using the array constructor method.  */
 
-function makeFruitArray() {}
+function makeFruitArray() {
+  let Array = ["Mango", "Kiwi", "Papaya", "Plum"];
+  return Array;
+}
 
 /* Task 4
   
   The 'checkArrayLength' function takes in an array as its only argument. Inside the function, return the number that represents the
   length of this array. */
 
-function checkArrayLength(array) {}
+function checkArrayLength(array) {
+  return array.length;
+}
 
 /* Task 5
   
@@ -35,13 +46,17 @@ function makeArrayWithLength(number) {}
   
 The 'accessFirstItem' function takes in an array as its only argument. Inside the function, return the first item in this array. */
 
-function accessFirstItem(array) {}
+function accessFirstItem(array) {
+  return array[0];
+}
 
 /* Task 7
   
   The 'accessLastItem' function takes in an array as its only argument. Inside the function, return the last item in this array. */
 
-function accessLastItem(array) {}
+function accessLastItem(array) {
+  return array[array.length - 1];
+}
 
 /* Task 8
   
@@ -57,35 +72,50 @@ function accessSpecificItem(array, index) {
 The 'changeArrayItem' function takes in an array, an index and a newArrayItem. Inside the function, mutate the array so that the item 
 at the specified index is replaced with the new item, and return the updated array. */
 
-function changeArrayItem(array, index, newArrayItem) {}
+function changeArrayItem(array, index, newArrayItem) {
+  let updatedArray = array.splice(array, index, newArrayItem);
+  return updatedArray;
+}
 
 /* Task 10
 
 The 'addToArrayEnd' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the end of
 the array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function addToArrayEnd(array, newArrayItem) {}
+function addToArrayEnd(array, newArrayItem) {
+  let updatedArray = array.push(newArrayItem);
+  return updatedArray;
+}
 
 /* Task 11
   
   The 'addToArrayStart' function takes in an array and a newArrayItem as its arguments. Inside the function, add the new item to the 
   start of the array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function addToArrayStart(array, newArrayItem) {}
+function addToArrayStart(array, newArrayItem) {
+  let updatedArray = array.unshift(array, newArrayItem);
+  return updatedArray;
+}
 
 /* Task 12
   
   The 'removeFromArrayEnd' function takes in an array as its only argument. Inside the function, remove the item from the end of the 
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function removeFromArrayEnd(array) {}
+function removeFromArrayEnd(array) {
+  let updatedArray = array.pop();
+  return updatedArray;
+}
 
 /* Task 13
   
   The 'removeFromArrayStart' function takes in an array as its only argument. Inside the function, remove the item from the start of the 
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
-function removeFromArrayStart(array) {}
+function removeFromArrayStart(array) {
+  let updatedArray = array.shift();
+  return updatedArray;
+}
 
 /* Task 14
   
@@ -93,7 +123,10 @@ function removeFromArrayStart(array) {}
   array as a human readable string list, separated by commas, using an array method. For example, ['hoover', 'mop', 'dustpan'] would 
   become 'hoover, mop, dustpan'.  */
 
-function makeArrayString(array) {}
+function makeArrayString(array) {
+  let updatedArray = array.join(separator);
+  return updatedArray;
+}
 
 /* Task 15
   
