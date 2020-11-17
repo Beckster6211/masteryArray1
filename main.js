@@ -134,7 +134,10 @@ function makeArrayString(array) {
   array to the string 'mutate' using an array method. For example, ['cumin', 'corriander', 'paprika', 'garam masala', 'tumeric', 'bay 
   leaves'] would become ['cumin', 'corriander', 'paprika', 'garam masala', 'mutate', 'bay leaves']. Return the mutated array. */
 
-function mutateIndexFive(array) {}
+function mutateIndexFive(array) {
+  let mutatedArray = array.splice(5, 0, "mutate");
+  return mutatedArray;
+}
 
 /* Task 16
   
@@ -143,7 +146,9 @@ function mutateIndexFive(array) {}
   items in the array. For example, if the given array was [10, 5, 18, 80, 54], and the given number was 3, the function would 
   return [80, 54]. */
 
-function makeShorterArray(array, number) {}
+function makeShorterArray(array, number) {
+  array.slice(number);
+}
 
 /* Task 17
 
@@ -153,7 +158,10 @@ adamant that this should not happen again. The 'removeTicket' function takes in 
 has been drawn. Inside the function, remove that ticket number from the array of ticket numbers so that it cannot be drawn again. Return
 the updated array of tickets. You may mutate the array. */
 
-function removeTicket(ticketArray, numberDrawn) {}
+function removeTicket(ticketArray, numberDrawn) {
+  let updatedArray = ticketArray.splice(numberDrawn, 0);
+  return updatedArray;
+}
 
 module.exports = {
   makeEmptyArray,
