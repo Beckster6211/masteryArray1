@@ -73,8 +73,9 @@ The 'changeArrayItem' function takes in an array, an index and a newArrayItem. I
 at the specified index is replaced with the new item, and return the updated array. */
 
 function changeArrayItem(array, index, newArrayItem) {
-  let updatedArray = array.splice(array, index, newArrayItem);
-  return updatedArray;
+  //console.log(array, index, newArrayItem);
+  array.splice(index, 1, newArrayItem);
+  return array;
 }
 
 /* Task 10
@@ -83,8 +84,9 @@ The 'addToArrayEnd' function takes in an array and a newArrayItem as its argumen
 the array using an array method. The array method should mutate the original array. Return the updated array. */
 
 function addToArrayEnd(array, newArrayItem) {
-  let updatedArray = array.push(newArrayItem);
-  return updatedArray;
+  // console.log(array, newArrayItem);
+  array.push(newArrayItem);
+  return array;
 }
 
 /* Task 11
@@ -93,8 +95,9 @@ function addToArrayEnd(array, newArrayItem) {
   start of the array using an array method. The array method should mutate the original array. Return the updated array. */
 
 function addToArrayStart(array, newArrayItem) {
-  let updatedArray = array.unshift(array, newArrayItem);
-  return updatedArray;
+  //console.log(array, newArrayItem);
+  array.unshift(newArrayItem);
+  return array;
 }
 
 /* Task 12
@@ -103,8 +106,9 @@ function addToArrayStart(array, newArrayItem) {
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
 function removeFromArrayEnd(array) {
-  let updatedArray = array.pop();
-  return updatedArray;
+  //console.log(array);
+  array.pop();
+  return array;
 }
 
 /* Task 13
@@ -113,8 +117,9 @@ function removeFromArrayEnd(array) {
   array using an array method. The array method should mutate the original array. Return the updated array. */
 
 function removeFromArrayStart(array) {
-  let updatedArray = array.shift();
-  return updatedArray;
+  //console.log(array);
+  array.shift();
+  return array;
 }
 
 /* Task 14
@@ -124,8 +129,10 @@ function removeFromArrayStart(array) {
   become 'hoover, mop, dustpan'.  */
 
 function makeArrayString(array) {
-  let updatedArray = array.join(separator);
-  return updatedArray;
+  //console.log(array);
+  array = JSON.stringify(array.join(", "));
+  //console.log(array);
+  return array;
 }
 
 /* Task 15
@@ -135,8 +142,9 @@ function makeArrayString(array) {
   leaves'] would become ['cumin', 'corriander', 'paprika', 'garam masala', 'mutate', 'bay leaves']. Return the mutated array. */
 
 function mutateIndexFive(array) {
-  let mutatedArray = array.splice(5, 0, "mutate");
-  return mutatedArray;
+  //console.log(array);
+  array.splice(4, 1, "mutate");
+  return array;
 }
 
 /* Task 16
@@ -147,7 +155,10 @@ function mutateIndexFive(array) {
   return [80, 54]. */
 
 function makeShorterArray(array, number) {
+  console.log(array, number);
   array.slice(number);
+  console.log(array);
+  return array;
 }
 
 /* Task 17
