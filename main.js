@@ -40,7 +40,10 @@ function checkArrayLength(array) {
 The 'makeArrayWithLength' function takes in a number as its only argument. Inside the function, return an array that is as long as the 
 number, but where each item in the array is undefined. */
 
-function makeArrayWithLength(number) {}
+function makeArrayWithLength(number) {
+  //console.log(number.forEach());
+  return number.forEach();
+}
 
 /* Task 6
   
@@ -130,9 +133,10 @@ function removeFromArrayStart(array) {
 
 function makeArrayString(array) {
   //console.log(array);
-  array = JSON.stringify(array.join(", "));
-  //console.log(array);
-  return array;
+  array = array.join(", ");
+  newArray = JSON.stringify(array);
+  //console.log(newArray);
+  return newArray;
 }
 
 /* Task 15
