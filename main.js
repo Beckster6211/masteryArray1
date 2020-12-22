@@ -41,7 +41,9 @@ The 'makeArrayWithLength' function takes in a number as its only argument. Insid
 number, but where each item in the array is undefined. */
 
 function makeArrayWithLength(number) {
-  //console.log(number.forEach());
+  console.log(number);
+  let newArray = number.forEach();
+  console.log(newArray);
   return number.forEach();
 }
 
@@ -133,8 +135,7 @@ function removeFromArrayStart(array) {
 
 function makeArrayString(array) {
   //console.log(array);
-  array = array.join(", ");
-  newArray = JSON.stringify(array);
+  let newArray = array.join(", ");
   //console.log(newArray);
   return newArray;
 }
@@ -159,10 +160,12 @@ function mutateIndexFive(array) {
   return [80, 54]. */
 
 function makeShorterArray(array, number) {
-  console.log(array, number);
-  array.slice(number);
-  console.log(array);
-  return array;
+  // console.log(array);
+  // console.log(number);
+  //console.log(array, number);
+  let newArray = array.slice(number);
+  //console.log(newArray);
+  return newArray;
 }
 
 /* Task 17
