@@ -42,9 +42,9 @@ number, but where each item in the array is undefined. */
 
 function makeArrayWithLength(number) {
   console.log(number);
-  let newArray = number.forEach();
-  console.log(newArray);
-  return number.forEach();
+  let array = new Array(number);
+  console.log(array);
+  return array;
 }
 
 /* Task 6
